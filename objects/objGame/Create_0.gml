@@ -1,6 +1,7 @@
 /// @desc ?
-globalvar runMode, debugMode;
+globalvar runMode, debugMode, gamePoints;
 runMode = true;
-debugMode = true;
+debugMode = false;
+gamePoints = 0;
 
 cursor_sprite = sprCursor;
