@@ -1,5 +1,5 @@
 /// @desc ?
-draw_set_alpha(0.5);
+draw_set_alpha(0.3);
 
 for (var i = 0; i < room_height - buffer * 2; i += 32) {
 	draw_line_width(buffer, i + buffer, room_width - buffer, i + buffer, 2);
