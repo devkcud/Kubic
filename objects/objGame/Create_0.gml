@@ -1,4 +1,6 @@
 /// @desc ?
 cursor_sprite = sprCursor;
 
-totalPoints = 0;
+globalvar gamePointsTotal;
+
+gamePointsTotal = 0;

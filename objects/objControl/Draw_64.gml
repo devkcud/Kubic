@@ -9,7 +9,7 @@ if (debugMode) {
 
 draw_text_scribble(room_width / 2, 64, "[fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
-draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center]Points: " + string(gamePoints) + "/" + string(objGame.totalPoints));
+draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center]Points: " + string(gamePoints) + "/" + string(gamePointsTotal));
 
 str = "[scale, 1.5]Dev Tools\n"
 	+ "[scale, 1][fa_bottom][fa_left]" // Configuration
@@ -18,7 +18,7 @@ str = "[scale, 1.5]Dev Tools\n"
 
 draw_text_scribble(16, room_height - 16, str);
 
-if (gamePoints == objGame.totalPoints) {
+if (gamePoints == gamePointsTotal) {
 	runMode = false;
 	
 	draw_set_alpha(0.7);
