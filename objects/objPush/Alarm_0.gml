@@ -1,15 +1,15 @@
 /// @desc Logic
 alarm[0] = 0.5 * room_speed;
 
+x = clamp(x, (objGrid.buffer + objGrid.grid), room_width - (objGrid.buffer + objGrid.grid));
+y = clamp(y, (objGrid.buffer + objGrid.grid), room_height - (objGrid.buffer + objGrid.grid));
+
 if (!runMode) return;
 
 xx = lengthdir_x(vel, image_angle);
 yy = lengthdir_y(vel, image_angle);
 	
 image_angle = point_direction(0, 0, xx, yy);
-
-x = clamp(x, (objGrid.buffer + 32), room_width - (objGrid.buffer + 32));
-y = clamp(y, (objGrid.buffer + 32), room_height - (objGrid.buffer + 32));
 
 if (place_meeting(x + xx, y, objFlipLeft) || place_meeting(x, y + yy, objFlipLeft))
 	image_angle += 90;

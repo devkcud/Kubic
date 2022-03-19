@@ -1,17 +1,18 @@
 /// @desc Drawing UI
 if (debugMode) {
 	draw_text_scribble(32, 32,
-		"Dev info:"
-		+ "[scale, 1]Run mode: " + string(runMode) + "\n"
-		+ "[scale, 1]Instances: " + string(instance_count)
+		"[scale, 1.5]Dev Tools (\"H\")\n"
+		+ "[scale, 1][fa_top][fa_left]"
+		+ "Run mode: " + string(runMode) + "\n"
+		+ "Instances: " + string(instance_count)
 	);
 }
 
 draw_text_scribble(room_width / 2, 64, "[fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
-draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center]Points: " + string(gamePoints) + "/" + string(gamePointsTotal));
+draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center][[" + string(gamePoints) + "/" + string(gamePointsTotal) + "]");
 
-str = "[scale, 1.5]Dev Tools\n"
+str = "[scale, 1.5]Tools\n"
 	+ "[scale, 1][fa_bottom][fa_left]" // Configuration
 	+ "Press \"P\" to toggle run mode.\n"
 	+ "Press \"R\" to restart the room.";
