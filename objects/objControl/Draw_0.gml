@@ -8,7 +8,7 @@ if (debugMode) {
 	);
 }
 
-draw_text_scribble(room_width / 2, 64, "[fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
+draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
 draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center][[" + string(gamePoints) + "/" + string(gamePointsTotal) + "]");
 
