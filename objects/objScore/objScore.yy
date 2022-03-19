@@ -3,7 +3,7 @@
     "name": "sprScore",
     "path": "sprites/sprScore/sprScore.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
