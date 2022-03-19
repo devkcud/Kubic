@@ -59,6 +59,7 @@
     {"id":{"name":"sprCursor","path":"sprites/sprCursor/sprCursor.yy",},"order":0,},
     {"id":{"name":"scribble_anim_wave","path":"scripts/scribble_anim_wave/scribble_anim_wave.yy",},"order":7,},
     {"id":{"name":"objMultiply","path":"objects/objMultiply/objMultiply.yy",},"order":2,},
+    {"id":{"name":"__macros__","path":"scripts/__macros__/__macros__.yy",},"order":0,},
     {"id":{"name":"scribble_external_sound_exists","path":"scripts/scribble_external_sound_exists/scribble_external_sound_exists.yy",},"order":3,},
     {"id":{"name":"scribble_font_bake_outline","path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},"order":4,},
     {"id":{"name":"scribble_anim_cycle","path":"scripts/scribble_anim_cycle/scribble_anim_cycle.yy",},"order":1,},

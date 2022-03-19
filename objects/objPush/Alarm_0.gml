@@ -1,8 +1,8 @@
 /// @desc Logic
 alarm[0] = 0.5 * room_speed;
 
-x = clamp(x, (objGrid.buffer + objGrid.grid), room_width - (objGrid.buffer + objGrid.grid));
-y = clamp(y, (objGrid.buffer + objGrid.grid), room_height - (objGrid.buffer + objGrid.grid));
+x = clamp(x, (GRID_BUFFER + GRID_WxH), room_width - (GRID_BUFFER + GRID_WxH));
+y = clamp(y, (GRID_BUFFER + GRID_WxH), room_height - (GRID_BUFFER + GRID_WxH));
 
 if (!runMode) return;
 

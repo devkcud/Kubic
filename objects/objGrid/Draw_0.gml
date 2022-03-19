@@ -1,6 +1,9 @@
 /// @desc ?
 draw_set_alpha(0.3);
 
+var buffer = GRID_BUFFER,
+	grid = GRID_WxH;
+
 for (var i = 0; i < room_height - buffer * 2; i += grid) {
 	draw_line_width(buffer, i + buffer, room_width - buffer, i + buffer, 2);
 }
