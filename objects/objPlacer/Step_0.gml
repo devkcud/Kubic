@@ -9,7 +9,8 @@ if (keyboard_check_pressed(ord("A"))) imgAngle += 90;
 
 with (objCursor) if (!place_free(x, y) || place_meeting(x, y, objScore) || distance_to_object(objScore) < other.minDist) return;
 
-if (mouse_check_button_pressed(mb_left)) {
+if (mouse_check_button_pressed(mb_left) && objRoomManager.quantityOfPushs > 0) {
+	objRoomManager.quantityOfPushs -= 1;
 	var obj = instance_create_layer(xx, yy, layer, objPush);
 	with (obj) image_angle = other.imgAngle;
 	audio_play_sound(sndPlace, 0, false);
