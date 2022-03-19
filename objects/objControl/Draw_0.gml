@@ -12,12 +12,7 @@ draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][
 
 draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center][[" + string(gamePoints) + "/" + string(gamePointsTotal) + "]");
 
-str = "[scale, 1.5]Tools\n"
-	+ "[scale, 1][fa_bottom][fa_left]" // Configuration
-	+ "Press \"P\" to toggle run mode.\n"
-	+ "Press \"R\" to restart the room.";
-
-draw_text_scribble(16, room_height - 16, str);
+draw_text_scribble(128, room_height - 120, "[fntTutorial][scale, 1.2][fa_top][fa_left]Pressione \"P\" para iniciar o \"modo corrida\".\n");
 
 if (gamePoints == gamePointsTotal) {
 	runMode = false;
@@ -28,7 +23,20 @@ if (gamePoints == gamePointsTotal) {
 	draw_set_alpha(1);
 	
 	draw_set_color(c_white);
-	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Finished![/]");
+	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Mandou bem![/]");
+	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Pressione [pulse]Enter[/pulse] para continuar[/]");
+	if (room != room_last && keyboard_check_pressed(vk_enter)) {
+		gamePointsTotal = 0;
+		gamePoints = 0;
+		playedAudio = false;
+
+		runMode = false;
+		room_goto_next();
+		
+		show_debug_message(gamePoints);
+		show_debug_message(gamePointsTotal);
+		show_debug_message(runMode);
+	}
 	if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
 	playedAudio = true;
 }
