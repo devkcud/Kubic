@@ -5,6 +5,7 @@ if keyboard_check_pressed(ord("P")) {
 	if (runMode == true) {
 		gamePointsTotal = 0;
 		gamePoints = 0;
+		playedAudio = false;
 	
 		room_restart();
 		runMode = false;
@@ -19,6 +20,7 @@ if keyboard_check_pressed(ord("P")) {
 if keyboard_check_pressed(ord("R"))	{
 	gamePointsTotal = 0;
 	gamePoints = 0;
+	playedAudio = false;
 	
 	room_restart();
 }

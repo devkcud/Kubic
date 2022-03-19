@@ -29,4 +29,6 @@ if (gamePoints == gamePointsTotal) {
 	
 	draw_set_color(c_white);
 	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Finished![/]");
+	if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
+	playedAudio = true;
 }

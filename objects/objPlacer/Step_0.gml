@@ -12,4 +12,5 @@ with (objCursor) if (!place_free(x, y) || place_meeting(x, y, objScore) || dista
 if (mouse_check_button_pressed(mb_left)) {
 	var obj = instance_create_layer(xx, yy, layer, objPush);
 	with (obj) image_angle = other.imgAngle;
+	audio_play_sound(sndPlace, 0, false);
 }
