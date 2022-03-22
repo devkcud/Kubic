@@ -35,5 +35,5 @@ if (place_meeting(x + xx, y, objFlipLeft) || place_meeting(x, y + yy, objFlipLef
 if (place_free(x + xx, y) && place_free(x, y + yy)) {
 	x += xx;
 	y += yy;
-	audio_play_sound(sndWalk, 0, false);
+	if (!audio_is_playing(sndWalk)) audio_play_sound(sndWalk, 0, false);
 }
