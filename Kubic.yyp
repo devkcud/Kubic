@@ -7,6 +7,7 @@
     {"id":{"name":"__scribble_class_model","path":"scripts/__scribble_class_model/__scribble_class_model.yy",},"order":3,},
     {"id":{"name":"__scribble_gen_1_model_limits_and_bezier_curves","path":"scripts/__scribble_gen_1_model_limits_and_bezier_curves/__scribble_gen_1_model_limits_and_bezier_curves.yy",},"order":0,},
     {"id":{"name":"scribble_anim_rainbow","path":"scripts/scribble_anim_rainbow/scribble_anim_rainbow.yy",},"order":4,},
+    {"id":{"name":"sprMrTuto","path":"sprites/sprMrTuto/sprMrTuto.yy",},"order":3,},
     {"id":{"name":"scribble_external_sound_add","path":"scripts/scribble_external_sound_add/scribble_external_sound_add.yy",},"order":2,},
     {"id":{"name":"sndPlace","path":"sounds/sndPlace/sndPlace.yy",},"order":1,},
     {"id":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},"order":1,},
@@ -24,6 +25,7 @@
     {"id":{"name":"sprScore","path":"sprites/sprScore/sprScore.yy",},"order":6,},
     {"id":{"name":"sndChange","path":"sounds/sndChange/sndChange.yy",},"order":3,},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},"order":0,},
+    {"id":{"name":"rmSecond","path":"rooms/rmSecond/rmSecond.yy",},"order":1,},
     {"id":{"name":"__scribble_gen_7_build_pages","path":"scripts/__scribble_gen_7_build_pages/__scribble_gen_7_build_pages.yy",},"order":7,},
     {"id":{"name":"objGrid","path":"objects/objGrid/objGrid.yy",},"order":4,},
     {"id":{"name":"scribble_super_glyph_copy_all","path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},"order":3,},
@@ -96,7 +98,7 @@
     {"id":{"name":"scribble_glyph_set","path":"scripts/scribble_glyph_set/scribble_glyph_set.yy",},"order":14,},
     {"id":{"name":"scribble_typists_add_event","path":"scripts/scribble_typists_add_event/scribble_typists_add_event.yy",},"order":9,},
     {"id":{"name":"__scribble_font_add_sprite","path":"scripts/__scribble_font_add_sprite/__scribble_font_add_sprite.yy",},"order":8,},
-    {"id":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},"order":2,},
+    {"id":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},"order":0,},
     {"id":{"name":"scribble_font_bake_shader","path":"scripts/scribble_font_bake_shader/scribble_font_bake_shader.yy",},"order":3,},
     {"id":{"name":"scribble_super_glyph_delete","path":"scripts/scribble_super_glyph_delete/scribble_super_glyph_delete.yy",},"order":4,},
     {"id":{"name":"scribble_rgb_to_bgr","path":"scripts/scribble_rgb_to_bgr/scribble_rgb_to_bgr.yy",},"order":8,},
@@ -141,6 +143,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"roomId":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},},
+    {"roomId":{"name":"rmSecond","path":"rooms/rmSecond/rmSecond.yy",},},
     {"roomId":{"name":"rmDemo","path":"rooms/rmDemo/rmDemo.yy",},},
   ],
   "Folders": [
@@ -174,6 +177,7 @@
     {"folderPath":"folders/Scribble/Superfonts.yy","order":6,"resourceVersion":"1.0","name":"Superfonts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/controllers.yy","order":14,"resourceVersion":"1.0","name":"controllers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Horri-fi.yy","order":16,"resourceVersion":"1.0","name":"Horri-fi","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Tutorial.yy","order":4,"resourceVersion":"1.0","name":"Tutorial","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

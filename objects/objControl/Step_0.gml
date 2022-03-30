@@ -1,4 +1,5 @@
 /// @desc Logic
+if (room == rmMenu) return;
 
 if keyboard_check_pressed(ord("P")) {	
 	if (runMode == true) {

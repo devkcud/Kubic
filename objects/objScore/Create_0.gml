@@ -1,4 +1,4 @@
-/// @desc Push the object to an array
+/// @desc ?
 gamePointsTotal += val;
 
 x = clamp(x, (GRID_BUFFER + GRID_WxH), room_width - (GRID_BUFFER + GRID_WxH));

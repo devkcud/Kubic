@@ -1,7 +1,8 @@
 tutorialStrings = [
-	"Olá, bem-vindo ao tutorial! Aqui você irá aprender as mecânicas básicas do jogo. (Enter para continuar)",
-	"Antes de inciar, coloque os blocos na grade clicando com o [pulse]botão esquerdo do mouse[/pulse]. Você [slant]NÃO[/slant] pode\ncolocar mais do que você tem.",
-	"Você pode rotacionar os blocos com as [pulse]teclas \"A\" e \"D\"[/pulse].",
-	"Quando o modo corrida for ativado, os [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] irão seguir em frente.", "Você pode remover os blocos com o [pulse]botão direito do mouse[/pulse].",
-	"O objetivo do jogo é coletar todas os blocos com números dentro. Quando estiver pronto, aperte a [pulse]tecla\"P\"[/pulse]\npara iniciar o [rainbow]modo corrida[/rainbow] (Isso travará todo o sistema de colocar blocos)."
+	"Olá, me chamo [wave][wobble]Mr Tuto[/wobble][/wave]! Seja bem-vindo à este guia.\nAqui você irá aprender as mecânicas básicas do jogo! (Enter para continuar)",
+	"Para começar, você pode colocar os [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] utilizando o [pulse]botão esquerdo do mouse[/pulse].\n(Para remove-los, utilize o [pulse]botão direito do mouse[/pulse]).",
+	"Antes de colocar os [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave],\nvocê pode rotaciona-los utilizando as [pulse]teclas \"A\" e \"D\"[/pulse] de seu teclado.",
+	"Lembre-se, você [pulse]NÃO[/pulse] pode colocar mais [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] do que você tem.\nVeja a quantidade de [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] que você possui no canto superior esquerdo da tela!",
+	"Para iniciar o jogo, também conhecido como [rainbow]modo corrida[/rainbow], e ver seus [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] andarem,\npressione a [pulse]tecla \"P\"[/pulse].",
+	"Quando o [rainbow]modo corrida[/rainbow] estiver ativo, você [pulse]NÃO[/pulse] pode colocar ou remover nenhum bloco. ;)"
 ];

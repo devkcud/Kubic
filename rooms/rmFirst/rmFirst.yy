@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"objInit","path":"objects/objInit/objInit.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":64.0,"resourceVersion":"1.0","name":"inst_618532EE_1","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"objControl","path":"objects/objControl/objControl.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_5EC96105_1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"objectId":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"quantityOfPushs","path":"objects/objRoomManager/objRoomManager.yy",},"objectId":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -27,7 +26,7 @@
     {"instances":[
         {"properties":[
             {"propertyId":{"name":"val","path":"objects/objScore/objScore.yy",},"objectId":{"name":"objScore","path":"objects/objScore/objScore.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"objScore","path":"objects/objScore/objScore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":352.0,"resourceVersion":"1.0","name":"inst_165216CC","tags":[],"resourceType":"GMRInstance",},
+          ],"isDnd":false,"objectId":{"name":"objScore","path":"objects/objScore/objScore.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":384.0,"resourceVersion":"1.0","name":"inst_165216CC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"objGrid","path":"objects/objGrid/objGrid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_6CACB19D_1","tags":[],"resourceType":"GMRInstance",},
@@ -35,15 +34,14 @@
     {"spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/rmDemo/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rmFirst/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_6CACB19D_1","path":"rooms/rmFirst/rmFirst.yy",},
-    {"name":"inst_618532EE_1","path":"rooms/rmFirst/rmFirst.yy",},
-    {"name":"inst_5EC96105_1","path":"rooms/rmFirst/rmFirst.yy",},
-    {"name":"inst_71B4DE3E_1","path":"rooms/rmFirst/rmFirst.yy",},
     {"name":"inst_592347B1","path":"rooms/rmFirst/rmFirst.yy",},
     {"name":"inst_165216CC","path":"rooms/rmFirst/rmFirst.yy",},
+    {"name":"inst_618532EE_1","path":"rooms/rmFirst/rmFirst.yy",},
+    {"name":"inst_71B4DE3E_1","path":"rooms/rmFirst/rmFirst.yy",},
+    {"name":"inst_6CACB19D_1","path":"rooms/rmFirst/rmFirst.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

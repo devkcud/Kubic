@@ -1,6 +1,8 @@
 /// @desc Draw rect to show it's aim
 draw_self();
 
+if (gamePoints == gamePointsTotal) image_alpha = 0.3;
+
 if (!debugMode) return;
 
 var x1 = x - sprite_width,
