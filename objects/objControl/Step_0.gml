@@ -15,3 +15,5 @@ if keyboard_check_pressed(ord("P")) {
 		return;
 	}
 }
+
+if (!debugMode) return;

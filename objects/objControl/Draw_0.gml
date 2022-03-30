@@ -1,13 +1,4 @@
 /// @desc Drawing UI
-if (debugMode) {
-	draw_text_scribble(32, 32,
-		"[scale, 1.5]Dev Tools (\"H\")\n"
-		+ "[scale, 1][fa_top][fa_left]"
-		+ "Run mode: " + string(runMode) + "\n"
-		+ "Instances: " + string(instance_count)
-	);
-}
-
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
 draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center][[" + string(gamePoints) + "/" + string(gamePointsTotal) + "]");
