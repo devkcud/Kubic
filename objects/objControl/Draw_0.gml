@@ -1,8 +1,6 @@
 /// @desc Drawing UI
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
-draw_text_scribble(room_width / 2, 100, "[scale, 1][fa_center][[" + string(gamePoints) + "/" + string(gamePointsTotal) + "]");
-
 draw_text_scribble(128, room_height - 120, "[fntTutorial][scale, 1.2][fa_top][fa_left]Pressione \"P\" para iniciar o \"modo corrida\".\n");
 
 if (gamePoints == gamePointsTotal) {

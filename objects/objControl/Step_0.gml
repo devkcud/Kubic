@@ -10,7 +10,7 @@ if keyboard_check_pressed(ord("P")) {
 		runMode = false;
 		return;
 	} else {
-		if (instance_exists(objPush)) objPush.alarm[0] = 0.5 * room_speed;
+		if (instance_exists(objPush)) objPush.alarm[0] = objPush.timerCooldown * room_speed;
 		runMode = true;
 		return;
 	}

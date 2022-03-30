@@ -1,7 +1,7 @@
 /// @desc Global variables
 globalvar runMode, debugMode, gamePoints, gamePointsTotal;
 runMode = false;
-debugMode = true;
+debugMode = false;
 gamePoints = 0;
 gamePointsTotal = 0;
 
