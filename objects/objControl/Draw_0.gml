@@ -2,7 +2,7 @@
 if (room == rmMenu) return;
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
-draw_text_scribble(room_width - 128, 120, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Pressione [blink]\"P\"[/blink] para iniciar/parar o [rainbow]\"modo corrida\"[/rainbow].");
+draw_text_scribble(room_width - 128, 128, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Pressione [blink]\"P\"[/blink] para iniciar/parar o [rainbow]\"modo corrida\"[/rainbow].");
 
 if (gamePoints == gamePointsTotal) {
 	runMode = false;
