@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Remove placed block
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 instance_destroy();

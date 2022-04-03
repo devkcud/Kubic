@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Drawing object at mouse pos
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 color = c_white;

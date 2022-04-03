@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Initializing variables
 imgAngle = 0;
 
 xx = 0;

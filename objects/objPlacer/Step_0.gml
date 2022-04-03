@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Make the placement possible
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 xx = clamp(round(mouse_x / GRID_WxH) * GRID_WxH, (GRID_BUFFER + GRID_WxH), room_width - (GRID_BUFFER + GRID_WxH));

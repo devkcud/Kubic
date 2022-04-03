@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Enable horri-fi
 horrifi_enable(true);
 
 horrifi_bloom_set(true, 15.00, 0.20, 0.65);

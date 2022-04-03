@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Drawing guide lines
 if (room = rmMenu) exit;
 
 // horizontal line

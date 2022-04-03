@@ -64,7 +64,6 @@
     {"id":{"name":"sprPush","path":"sprites/sprPush/sprPush.yy",},"order":4,},
     {"id":{"name":"fntTutorial","path":"fonts/fntTutorial/fntTutorial.yy",},"order":2,},
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},"order":10,},
-    {"id":{"name":"objInit","path":"objects/objInit/objInit.yy",},"order":2,},
     {"id":{"name":"sprFlipleft","path":"sprites/sprFlipleft/sprFlipleft.yy",},"order":1,},
     {"id":{"name":"sprCursor","path":"sprites/sprCursor/sprCursor.yy",},"order":0,},
     {"id":{"name":"scribble_anim_wave","path":"scripts/scribble_anim_wave/scribble_anim_wave.yy",},"order":7,},

@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Drawing the pause menu
 if (global.isPaused) {
 	draw_surface(screenshot, 0, 0);
 	
