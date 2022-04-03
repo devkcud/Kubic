@@ -1,8 +1,6 @@
 /// @desc Drawing UI
 if (room == rmMenu) exit;
 
-if (keyboard_check_pressed(vk_add)) gamePoints = gamePointsTotal;
-
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
 draw_text_scribble(room_width - 128, 128, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Pressione [blink]\"P\"[/blink] para iniciar/parar o [rainbow]\"modo corrida\"[/rainbow].");

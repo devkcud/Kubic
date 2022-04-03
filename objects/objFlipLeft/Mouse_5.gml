@@ -1,5 +1,4 @@
 /// @desc Remove placed block
-
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 objPlacer.placingIndex = 1;
