@@ -1,4 +1,6 @@
 /// @desc ?
+if (gamePoints == gamePointsTotal) exit;
+
 global.isPaused = !global.isPaused;
 
 if (surface_exists(screenshot)) surface_free(screenshot);

@@ -1,5 +1,5 @@
 /// @desc Logic
-if (room == rmMenu) return;
+if (room == rmMenu) exit;
 
 if keyboard_check_pressed(ord("P")) {	
 	if (runMode == true) {
@@ -9,12 +9,9 @@ if keyboard_check_pressed(ord("P")) {
 	
 		room_restart();
 		runMode = false;
-		return;
 	} else {
 		if (instance_exists(objPush)) objPush.alarm[0] = objPush.timerCooldown * room_speed;
 		runMode = true;
-		return;
 	}
 }
 
-if (!debugMode) return;

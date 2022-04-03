@@ -1,5 +1,5 @@
 /// @desc ?
-if (array_length(tutorialStrings) == 0) return;
+if (array_length(tutorialStrings) == 0) exit;
 
 index = clamp(index, 0, array_length(tutorialStrings) - 1);
 

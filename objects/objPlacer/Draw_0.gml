@@ -1,5 +1,5 @@
 /// @desc ?
-if (runMode == true || gamePoints == gamePointsTotal) return;
+if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 color = c_white;
 

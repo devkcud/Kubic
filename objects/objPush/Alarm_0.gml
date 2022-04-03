@@ -1,7 +1,7 @@
 /// @desc Logic
 alarm[0] = timerCooldown * room_speed;
 
-if (!runMode) return;
+if (!runMode) exit;
 
 var xst = x,
 	yst = y;
@@ -21,7 +21,7 @@ if (place_meeting(x + xx, y, objFlipLeft) || place_meeting(x, y + yy, objFlipLef
 	image_angle += 180;
 	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
 } else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {
-	if (!place_free(x + xx * 2, y) || !place_free(x, y + yy * 2) || !place_free(x + xx * 3, y) || !place_free(x, y + yy * 3)) return;
+	if (!place_free(x + xx * 2, y) || !place_free(x, y + yy * 2) || !place_free(x + xx * 3, y) || !place_free(x, y + yy * 3)) exit;
 	
 	var obj1 = instance_create_layer(x + xx * 2, y + yy * 2, layer, object_index);
 	var obj2 = instance_create_layer(x + xx * 3, y + yy * 3, layer, object_index);

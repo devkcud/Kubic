@@ -1,5 +1,5 @@
 /// @desc ?
-if (!debugMode) return;
+if (!debugMode) exit;
 
 draw_text_scribble(room_width - 32, 16,
 	"[fa_top][fa_right]" // General Configuration

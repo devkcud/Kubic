@@ -1,5 +1,5 @@
 /// @desc ?
-if (room = rmMenu) return;
+if (room = rmMenu) exit;
 
 // horizontal line
 var buffer = GRID_BUFFER,

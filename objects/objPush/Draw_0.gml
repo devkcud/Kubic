@@ -3,7 +3,7 @@ draw_self();
 
 if (gamePoints == gamePointsTotal) image_alpha = 0.3;
 
-if (!debugMode) return;
+if (!debugMode) exit;
 
 var x1 = x - sprite_width,
 	y1 = y - sprite_height,
