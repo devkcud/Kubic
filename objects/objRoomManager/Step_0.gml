@@ -1,4 +1,5 @@
 /// @desc Changing tutorial index
+
 if (array_length(tutorialStrings) == 0) exit;
 
 index = clamp(index, 0, array_length(tutorialStrings) - 1);

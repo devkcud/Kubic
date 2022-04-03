@@ -1,4 +1,5 @@
 /// @desc Drawing tutorial
+
 if (gamePoints == gamePointsTotal) exit;
 
 scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][sprPush] [scale, 1.5]" + string(quantityOfPushs) + "[/]").draw(GRID_BUFFER, GRID_BUFFER - 38);

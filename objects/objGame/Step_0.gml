@@ -1,4 +1,5 @@
 /// @desc Make possible changing room
+
 if (!room == rmMenu) exit;
 
 if (keyboard_check_pressed(vk_anykey)) {

@@ -1,4 +1,5 @@
 /// @desc Logic
+
 alarm[0] = timerCooldown * room_speed;
 
 if (!runMode) exit;

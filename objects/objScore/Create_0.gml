@@ -1,4 +1,5 @@
 /// @desc Initializing variables
+
 gamePointsTotal += val;
 
 x = clamp(x, (GRID_BUFFER + GRID_WxH), room_width - (GRID_BUFFER + GRID_WxH));

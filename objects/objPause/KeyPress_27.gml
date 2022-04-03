@@ -1,4 +1,5 @@
 /// @desc Pausing the game
+
 if (gamePoints == gamePointsTotal) exit;
 
 global.isPaused = !global.isPaused;
