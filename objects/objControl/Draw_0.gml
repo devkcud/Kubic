@@ -11,21 +11,19 @@ if (gamePoints == gamePointsTotal) {
 	draw_set_color(c_black);
 	draw_rectangle(0, 0, room_width, room_height, false);
 	draw_set_alpha(1);
-	
 	draw_set_color(c_white);
+	
 	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Mandou bem![/]");
 	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Pressione [pulse]Enter[/pulse] para continuar[/]");
+	
 	if (room != room_last && keyboard_check_pressed(vk_enter)) {
 		room_goto_next();
 		
 		gamePointsTotal = 0;
 		gamePoints = 0;
 		playedAudio = false;
-		
-		show_debug_message(gamePoints);
-		show_debug_message(gamePointsTotal);
-		show_debug_message(runMode);
 	}
+	
 	if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
 	playedAudio = true;
 }
