@@ -2,7 +2,7 @@
 
 if (gamePoints == gamePointsTotal) exit;
 
-scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][sprPush] [scale, 1.5]" + string(quantityOfPushs) + "[/]").draw(GRID_BUFFER, GRID_BUFFER - 38);
+scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][" + objPlacer.blockImgName + "] [scale, 1.5]" + string(objPlacer.blocks[# objPlacer.placingIndex, 1]) + "[/]").draw(GRID_BUFFER, GRID_BUFFER - 38);
 
 if (array_length(tutorialStrings) == 0) exit;
 
