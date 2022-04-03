@@ -1,0 +1,2 @@
+/// @desc ?
+global.isPaused = false;
