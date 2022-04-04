@@ -8,3 +8,4 @@ horrifi_scanlines_set(true, 0.30);
 horrifi_vhs_set(true, 0.20);
 horrifi_vignette_set(true, 0.30, 1.00);
 horrifi_noise_set(true, 0.25);
+

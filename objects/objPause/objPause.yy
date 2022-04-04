@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "controllers",
-    "path": "folders/Objects/controllers.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
   "resourceVersion": "1.0",
   "name": "objPause",
