@@ -7,6 +7,7 @@ if keyboard_check_pressed(ord("P")) {
 		gamePointsTotal = 0;
 		gamePoints = 0;
 		playedAudio = false;
+		global.scoreList = [];
 	
 		room_restart();
 		runMode = false;
