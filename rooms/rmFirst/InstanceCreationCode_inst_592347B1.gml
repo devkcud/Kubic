@@ -4,5 +4,6 @@ tutorialStrings = [
 	"Antes de colocar os [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave],\nvocê pode rotaciona-los utilizando as [pulse]teclas \"A\" e \"D\"[/pulse] de seu teclado.",
 	"Lembre-se, você [pulse]NÃO[/pulse] pode colocar mais [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] do que você tem.\nVeja a quantidade de [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] que você possui no canto superior esquerdo da tela!",
 	"Para iniciar o jogo, também conhecido como [rainbow]modo corrida[/rainbow], e ver seus [wave]blocos com setas verdes [scale, 0.8][sprPush][scale, 1.5][/wave] andarem,\npressione a [pulse]tecla \"P\"[/pulse].",
+	"Você deve coletar todos os [wave]blocos com números dentro[/wave] em ordem!",
 	"Quando o [rainbow]modo corrida[/rainbow] estiver ativo, você [pulse]NÃO[/pulse] pode colocar ou remover nenhum bloco. ;)"
 ];

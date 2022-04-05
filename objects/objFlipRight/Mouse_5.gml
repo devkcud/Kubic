@@ -2,7 +2,7 @@
 
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
-objPlacer.placingIndex = 2;
+objPlacer.placingIndex = 1;
 objPlacer.blocks[# objPlacer.placingIndex, 1] += 1;
 
 instance_destroy();

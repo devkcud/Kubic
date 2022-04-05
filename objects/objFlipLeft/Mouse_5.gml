@@ -1,7 +1,8 @@
 /// @desc Remove placed block
+
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 
-objPlacer.placingIndex = 1;
+objPlacer.placingIndex = 2;
 objPlacer.blocks[# objPlacer.placingIndex, 1] += 1;
 
 instance_destroy();

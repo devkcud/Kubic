@@ -1,4 +1,5 @@
 /// @desc Drawing UI
+
 if (room == rmMenu) exit;
 
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");

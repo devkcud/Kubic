@@ -1,7 +1,7 @@
 /// @desc Make the placement possible
 
-if (keyboard_check_pressed(ord("W")) && placingIndex < 4) placingIndex++;
-if (keyboard_check_pressed(ord("S")) && placingIndex > 0) placingIndex--;
+if (keyboard_check_pressed(ord("W")) && placingIndex < 4) { placingIndex++; imgAngle = 0; }
+if (keyboard_check_pressed(ord("S")) && placingIndex > 0) { placingIndex--; imgAngle = 0; }
 
 blockPlacing = blocks[# placingIndex, 0];
 blockImg     = blocks[# placingIndex, 2];
