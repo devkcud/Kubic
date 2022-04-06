@@ -36,6 +36,6 @@ draw_text_scribble(round(room_width / 6), 128, "[wave][scale, 1.5][fntHeader][fa
 draw_text_scribble(round(room_width / 6), 128 + 64, "[fntScore][fa_middle][fa_center]Um jogo baseado em cubos[/]");
 
 draw_text_scribble(32, room_height / 2, "[fa_middle][fa_left][fntScore][rainbow][scale, 1.4]Enter[/scale][/rainbow] para iniciar.[/]");
-draw_text_scribble(32, room_height / 2 + 24, "[fa_middle][fa_left][fntScore][rainbow][scale, 1.4]X[/scale][/rainbow] para ir às configurações.[/]");
+// draw_text_scribble(32, room_height / 2 + 24, "[fa_middle][fa_left][fntScore][rainbow][scale, 1.4]X[/scale][/rainbow] para ir às configurações.[/]");
 draw_text_scribble(round(room_width / 6), room_height - 32, "[fa_center][fa_bottom][fntScore]Criado por\nAndré Luis, André Vitor & Carlos Daniel[/]");
 

@@ -15,7 +15,7 @@ yy = clamp(round(mouse_y / GRID_WxH) * GRID_WxH, (GRID_BUFFER + GRID_WxH), room_
 if (keyboard_check_pressed(ord("D"))) imgAngle -= 90;
 if (keyboard_check_pressed(ord("A"))) imgAngle += 90;
 
-with (objCursor) { if (!place_free(x, y) || place_meeting(x, y, objPush) || place_meeting(x, y, objScore) || distance_to_object(objScore) < other.minDist) exit; }
+with (objCursor) { if (!place_free(x, y) || place_meeting(x, y, objPush) || place_meeting(x, y, objScore) || distance_to_object(objScore) < other.minDist || place_meeting(x, y, objSpike)) exit; }
 
 if (mouse_check_button_pressed(mb_left) && blocks[# placingIndex, 1] > 0) {
 	blocks[# placingIndex, 1] -= 1;
