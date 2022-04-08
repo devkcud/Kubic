@@ -1,6 +1,7 @@
 /// @desc Enable horri-fi
 
-horrifi_enable(true);
+isShadersActive = true;
+horrifi_enable(isShadersActive);
 
 horrifi_bloom_set(true, 15.00, 0.20, 0.65);
 horrifi_chromaticab_set(true, 0.15);

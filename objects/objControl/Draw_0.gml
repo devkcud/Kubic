@@ -19,8 +19,14 @@ if (gamePoints == gamePointsTotal) {
 	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Pressione [pulse]Enter[/pulse] para continuar[/]");
 	
 	if (room != room_last && keyboard_check_pressed(vk_enter)) {
-		room_goto_next();
+		var rm = -1;
 		
+		array_delete(global.playableRooms, 0, 1);
+		if (array_length(global.playableRooms) > 0) rm = global.playableRooms[0];
+		else rm = rmCredits;
+		
+		TransitionStart(rm, sqFadeOut, sqFadeIn);
+
 		gamePointsTotal = 0;
 		gamePoints = 0;
 		playedAudio = false;

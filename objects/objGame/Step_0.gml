@@ -3,6 +3,6 @@
 if (!room == rmMenu) exit;
 
 if (keyboard_check_pressed(vk_enter)) {
-	room_goto_next();
+	TransitionStart(rmFirst, sqSquareOut, sqSquareIn);
 	audio_play_sound(sndSuccess, 1, false);
 }
