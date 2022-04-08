@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprFlipRight",
-    "path": "sprites/sprFlipRight/sprFlipRight.yy",
+    "name": "sprDirectional",
+    "path": "sprites/sprDirectional/sprDirectional.yy",
   },
   "solid": true,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/GameObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objFlipRight",
+  "name": "objDirectional",
   "tags": [],
   "resourceType": "GMObject",
 }

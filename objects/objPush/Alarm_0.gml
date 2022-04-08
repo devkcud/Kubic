@@ -12,14 +12,16 @@ yy = lengthdir_y(vel, image_angle);
 	
 image_angle = point_direction(0, 0, xx, yy);
 
-if (place_meeting(x + xx, y, objFlipLeft) || place_meeting(x, y + yy, objFlipLeft)) {
-	image_angle += 90;
-	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
-} else if (place_meeting(x + xx, y, objFlipRight) || place_meeting(x, y + yy, objFlipRight)) {
-	image_angle -= 90;
-	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
-} else if (place_meeting(x + xx, y, objRotate) || place_meeting(x, y + yy, objRotate)) {
-	image_angle += 180;
+if (place_meeting(x + xx, y, objDirectional) || place_meeting(x, y + yy, objDirectional)) {
+	with (instance_nearest(x, y, objDirectional)) {
+		if (image_angle == other.image_angle) {
+			instance_create_layer(x + other.xx, y + other.yy, layer, other.object_index);
+			instance_destroy(other);
+		}
+		
+		other.image_angle = image_angle;
+	}
+	
 	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
 } else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {
 	if (!place_free(x + xx * 2, y) || !place_free(x, y + yy * 2) || !place_free(x + xx * 3, y) || !place_free(x, y + yy * 3)) exit;
