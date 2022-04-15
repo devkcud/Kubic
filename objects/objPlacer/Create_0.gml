@@ -20,7 +20,7 @@ blocks[# 2, 2] = sprMultiply;
 blocks[# 2, 3] = "sprMultiply";
 
 blockPlacing = blocks[# placingIndex, 0];
-blockImg     = blocks[# placingIndex, 2];
+blockImg = blocks[# placingIndex, 2];
 blockImgName = blocks[# placingIndex, 3];
 
 imgAngle = 0;

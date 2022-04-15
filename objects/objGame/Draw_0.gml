@@ -32,10 +32,17 @@ draw_set_color(make_color_rgb(16, 16, 16));
 draw_rectangle(0, 0, round(room_width / 3), room_height, false);
 draw_set_color(c_white);
 
-draw_text_scribble(round(room_width / 6), 128, "[wave][scale, 1.5][fntHeader][fa_middle][fa_center][sprKu]bic[/]");
-draw_text_scribble(round(room_width / 6), 128 + 64, "[fntScore][fa_middle][fa_center]Um jogo baseado em cubos[/]");
+scribble(
+	"[wave][scale, 1.5][fntHeader][fa_middle][fa_center][sprKu]bic[/]" + "\n"
+	+ "[fntScore][fa_middle][fa_center]Um jogo baseado em cubos[/]"
+).draw(round(room_width / 6), 128);
 
-draw_text_scribble(32, room_height / 2, "[fa_middle][fa_left][fntScore][rainbow][scale, 1.4]Enter[/scale][/rainbow] para iniciar.[/]");
-// draw_text_scribble(32, room_height / 2 + 24, "[fa_middle][fa_left][fntScore][rainbow][scale, 1.4]X[/scale][/rainbow] para ir às configurações.[/]");
-draw_text_scribble(round(room_width / 6), room_height - 32, "[fa_center][fa_bottom][fntScore]Criado por\nAndré Luis, André Victor & Carlos Daniel[/]");
+scribble(
+	"[fa_middle][fa_left][fntScore]"
+	+ "[rainbow][scale, 1.4]Enter[/scale][/rainbow] para iniciar." + "\n"
+	+ "[rainbow][scale, 1.4]C[/scale][/rainbow] para ver os controles."
+	+ "[/]"
+).draw(32, room_height / 2);
+
+scribble("[fa_center][fa_bottom][fntScore]Criado por\nAndré Luis, André Victor & Carlos Daniel[/]").draw(round(room_width / 6), room_height - 32);
 
