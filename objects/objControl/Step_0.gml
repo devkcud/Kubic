@@ -1,6 +1,7 @@
 /// @desc Logic
 
 if (room == rmMenu) exit;
+if (room == rmControls) exit;
 
 if keyboard_check_pressed(ord("P")) {	
 	if (runMode == true) {

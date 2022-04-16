@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Draw the controls
 
 scribble("[fa_center][fntHeader][wave][rainbow]Controls[/]").draw(room_width / 2, 128);
 scribble(
