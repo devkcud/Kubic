@@ -2,7 +2,11 @@
 
 if (gamePoints == gamePointsTotal) exit;
 
-scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][" + objPlacer.blockImgName + "] [scale, 1.5]" + string(objPlacer.blocks[# objPlacer.placingIndex, 1]) + "[/]").draw(GRID_BUFFER, GRID_BUFFER - 38);
+for (var i = 0; i < 3; i++) {
+	scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][c_gray][" + objPlacer.blocks[# i, 3] + "] [scale, 1.5]" + string(objPlacer.blocks[# i, 1]) + "[/]").draw((GRID_BUFFER * i) * 0.5 + GRID_BUFFER, GRID_BUFFER - 38);
+}
+
+scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][c_white][" + objPlacer.blocks[# objPlacer.placingIndex, 3] + "] [scale, 1.5]" + string(objPlacer.blocks[# objPlacer.placingIndex, 1]) + "[/]").draw((GRID_BUFFER * objPlacer.placingIndex) * 0.5 + GRID_BUFFER, GRID_BUFFER - 38);
 
 if (array_length(tutorialStrings) == 0) exit;
 

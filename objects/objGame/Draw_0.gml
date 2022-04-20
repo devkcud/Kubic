@@ -44,5 +44,5 @@ scribble(
 	+ "[/]"
 ).draw(32, room_height / 2);
 
-scribble("[fa_center][fa_bottom][fntScore]Criado por\nAndré Luis, André Victor & Carlos Daniel[/]").draw(round(room_width / 6), room_height - 32);
+scribble("[fa_center][fa_bottom][fntScore]Criado por\n[scale, 2]LostDuck[/scale]").draw(round(room_width / 6), room_height - 32);
 
