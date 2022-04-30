@@ -5,7 +5,8 @@ if (room == rmControls) exit;
 
 draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
 
-draw_text_scribble(room_width - 128, 128, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Press [blink]\"P\"[/blink] to start/stop [rainbow]\"run mode\"[/rainbow].");
+if (runMode == false) draw_text_scribble(room_width - 128, 128, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Press [blink]\"P\"[/blink] to start/stop [rainbow]\"run mode\"[/rainbow].");
+if (runMode == true) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_right][rainbow]Run mode[/rainbow] on!").draw(room_width - 128, 128);
 
 if (gamePoints == gamePointsTotal) {
 	runMode = false;
@@ -19,12 +20,15 @@ if (gamePoints == gamePointsTotal) {
 	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Good job![/]");
 	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Press [pulse]Enter[/pulse] to continue.[/]");
 	
-	if (room != room_last && keyboard_check_pressed(vk_enter)) {
-		var rm = -1;
+	if (keyboard_check_pressed(vk_enter)) {
+		var rm;
 		
 		array_delete(global.playableRooms, 0, 1);
+		
+		rm = rmCredits;
 		if (array_length(global.playableRooms) > 0) rm = global.playableRooms[0];
-		else rm = rmCredits;
+		
+		show_debug_message(string(room_get_name(rm)));
 		
 		TransitionStart(rm, sqFadeOut, sqFadeIn);
 
