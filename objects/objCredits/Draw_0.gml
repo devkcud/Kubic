@@ -1,5 +1,5 @@
 /// @desc ?
 
-scribble("[fa_center][fntHeader][rainbow][wave]Obrigado por jogar![/wave][/rainbow]\n[fntScore]Criado por:\nAndré Luis (Programação & Arte)\nAndré Victor (Level Design & Beta Tester)\nCarlos (SFX & Beta Tester)[/]").draw(room_width / 2, 128);
-scribble("[fa_center][fntScore]Aperte Esc para sair do jogo.[/]").draw(room_width / 2, room_height - 128);
+scribble("[fa_center][fntHeader][rainbow][wave]Thank you for playing![/wave][/rainbow]\n[fntScore]Created by [pulse]Lost Duck[/pulse][/]").draw(room_width / 2, 128);
+scribble("[fa_center][fntScore]Press [pulse]Esc[/pulse] to return to exit the game.[/]").draw(room_width / 2, room_height - 128);
 

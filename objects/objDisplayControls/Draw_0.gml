@@ -3,13 +3,13 @@
 scribble("[fa_center][fntHeader][wave][rainbow]Controls[/]").draw(room_width / 2, 128);
 scribble(
 	"[fa_center][fntScore][scale, 1.5]"
-	+ "\"[pulse]Botão Esquerdo[/pulse] do mouse\" - Coloca os blocos na posição do mouse." + "\n"
-	+ "\"[pulse]Botão Direito[/pulse] do mouse\" - Retira os blocos que estão na posição do mouse." + "\n"
-	+ "\"Teclas [pulse]A[/pulse] & [pulse]D[/pulse] do teclado\" - Rotaciona os blocos antes de serem colocados." + "\n"
-	+ "\"Teclas [pulse]W[/pulse] & [pulse]S[/pulse] do teclado\" - Troca o bloco que está sendo colocado." + "\n"
-	+ "\"Tecla [pulse]L[/pulse] do teclado\" - Desativa os shaders (Filtros que deixam o jogo bonitinho)"
+	+ "\"[pulse]Left Mouse Button[/pulse]\" - Place blocks at mouse position." + "\n"
+	+ "\"[pulse]Right Mouse Button[/pulse]\" - Remove the currently hovered block." + "\n"
+	+ "\"Teclas [pulse]A[/pulse] & [pulse]D[/pulse] keys\" - Rotate the block before placed." + "\n"
+	+ "\"Teclas [pulse]W[/pulse] & [pulse]S[/pulse] keys\" - Change the block being placed." + "\n"
+	+ "\"Tecla [pulse]L[/pulse] key\" - Deactivate shaders (Filters)."
 	+ "[/]"
 ).draw(room_width / 2, room_height / 2 - 128);
 
-scribble("[fa_center][fntTutorial]Pressione [pulse]Esc[/pulse] para retornar ao menu.[/]").draw(room_width / 2, room_height - 32);
+scribble("[fa_center][fntTutorial]Press [pulse]Esc[/pulse] to return to the main menu.[/]").draw(room_width / 2, room_height - 32);
 
