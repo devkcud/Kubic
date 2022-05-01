@@ -8,3 +8,6 @@ gamePointsTotal = 0;
 global.scoreList = [];
 
 playedAudio = false;
+
+placedBlocks = [];
+scoreCollected = [];

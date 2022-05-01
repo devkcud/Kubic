@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Restore values
 
 blocks[# 0, 1] = objRoomManager.quantityOfPushs;
 blocks[# 1, 1] = objRoomManager.quantityOfDirectional;
