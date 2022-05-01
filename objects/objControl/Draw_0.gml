@@ -27,9 +27,7 @@ if (gamePoints == gamePointsTotal) {
 		
 		rm = rmCredits;
 		if (array_length(global.playableRooms) > 0) rm = global.playableRooms[0];
-		
-		show_debug_message(string(room_get_name(rm)));
-		
+				
 		TransitionStart(rm, sqFadeOut, sqFadeIn);
 
 		gamePointsTotal = 0;

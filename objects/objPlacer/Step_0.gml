@@ -1,22 +1,28 @@
 /// @desc Make the placement possible
 
+blockPlacing = blocks[# placingIndex, 0];
+blockQuant = blocks[# placingIndex, 1];
+blockImg = blocks[# placingIndex, 2];
+blockImgName = blocks[# placingIndex, 3];
+
 if (keyboard_check_pressed(ord("W"))) {
 	imgAngle = 0;
 	
 	placingIndex++;
-	if (placingIndex > 2) placingIndex = 0;
 }
 
 if (keyboard_check_pressed(ord("S"))) {
 	imgAngle = 0;
 
 	placingIndex--;
-	if (placingIndex < 0) placingIndex = 2;
 }
 
-blockPlacing = blocks[# placingIndex, 0];
-blockImg = blocks[# placingIndex, 2];
-blockImgName = blocks[# placingIndex, 3];
+if (blockQuant == 0)
+	for (var i = 0; i < 2; i++)
+		if (blocks[# i, 1] != 0) placingIndex = i;
+
+if (placingIndex > 2) placingIndex = 0;
+if (placingIndex < 0) placingIndex = 2;
 
 if (runMode == true || gamePoints == gamePointsTotal) exit;
 

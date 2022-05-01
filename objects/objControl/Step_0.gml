@@ -2,6 +2,7 @@
 
 if (room == rmMenu) exit;
 if (room == rmControls) exit;
+if (gamePoints == gamePointsTotal) exit;
 
 if (keyboard_check_pressed(ord("P"))) {
 	runMode = !runMode;
