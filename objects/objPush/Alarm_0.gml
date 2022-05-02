@@ -23,15 +23,28 @@ if (place_meeting(x + xx, y, objDirectional) || place_meeting(x, y + yy, objDire
 	}
 	
 	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
-} else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {
+}
+else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {
 	if (!place_free(x + xx * 2, y) || !place_free(x, y + yy * 2) || !place_free(x + xx * 3, y) || !place_free(x, y + yy * 3)) exit;
 	
-	var obj1 = instance_create_layer(x + xx * 2, y + yy * 2, layer, object_index);
-	var obj2 = instance_create_layer(x + xx * 3, y + yy * 3, layer, object_index);
+	with (instance_nearest(x, y, objMultiply)) {
+		var multxx = lengthdir_x(other.vel, image_angle),
+			multyy = lengthdir_y(other.vel, image_angle);
+		
+		show_debug_message("XX: " + string(other.xx) + "| MXX: " + string(multxx));
+		show_debug_message("YY: " + string(other.yy) + "| MXX: " + string(multyy));
+		
+		if ((multxx == other.xx && multyy != other.yy) || (multyy == other.yy && multxx != other.xx)) exit;
+		
+		var obj1 = instance_create_layer(x + multxx, y + multyy, layer, objPush),
+			obj2 = instance_create_layer(x + multxx * 2, y + multyy * 2, layer, objPush);
+
+		with (obj1) image_angle = other.image_angle;
+		with (obj2) image_angle = other.image_angle;
+
+		instance_destroy(other);
+	}
 	
-	with (obj1) image_angle = other.image_angle;
-	with (obj2) image_angle = other.image_angle;
-	with (other) instance_destroy();
 	if (!audio_is_playing(sndChange)) audio_play_sound(sndChange, 1, false);
 }
 
