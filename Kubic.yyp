@@ -65,6 +65,7 @@
     {"id":{"name":"sndRemove","path":"sounds/sndRemove/sndRemove.yy",},"order":2,},
     {"id":{"name":"scribble_font_bake_outline_8dir","path":"scripts/scribble_font_bake_outline_8dir/scribble_font_bake_outline_8dir.yy",},"order":1,},
     {"id":{"name":"sprPush","path":"sprites/sprPush/sprPush.yy",},"order":4,},
+    {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},"order":2,},
     {"id":{"name":"fntTutorial","path":"fonts/fntTutorial/fntTutorial.yy",},"order":2,},
     {"id":{"name":"sprMute","path":"sprites/sprMute/sprMute.yy",},"order":10,},
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},"order":10,},
@@ -157,6 +158,7 @@
     {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
     {"roomId":{"name":"rmFirst","path":"rooms/rmFirst/rmFirst.yy",},},
     {"roomId":{"name":"rmSecond","path":"rooms/rmSecond/rmSecond.yy",},},
+    {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

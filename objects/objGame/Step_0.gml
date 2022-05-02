@@ -11,3 +11,9 @@ if (keyboard_check_pressed(ord("C"))) {
 	TransitionStart(rmControls, sqSquareOut, sqSquareIn);
 	audio_play_sound(sndSuccess, 1, false);
 }
+
+if (keyboard_check_pressed(ord("T"))) {
+	TransitionStart(rmTest, sqSquareOut, sqSquareIn);
+	audio_play_sound(sndSuccess, 1, false);
+}
+

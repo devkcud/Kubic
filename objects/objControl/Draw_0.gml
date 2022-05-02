@@ -9,35 +9,51 @@ if (runMode == false) draw_text_scribble(room_width - 128, 128, "[fntTutorial][s
 if (runMode == true) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_right][rainbow]Run mode[/rainbow] on!").draw(room_width - 128, 128);
 
 if (gamePoints == gamePointsTotal) {
-	runMode = false;
-	
 	draw_set_alpha(0.7);
 	draw_set_color(c_black);
 	draw_rectangle(0, 0, room_width, room_height, false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-	
+
 	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Good job![/]");
 	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Press [pulse]Enter[/pulse] to continue.[/]");
-	
-	if (keyboard_check_pressed(vk_enter)) {
-		var rm;
-		
-		array_delete(global.playableRooms, 0, 1);
-		
-		rm = rmCredits;
-		if (array_length(global.playableRooms) > 0) rm = global.playableRooms[0];
-				
-		TransitionStart(rm, sqFadeOut, sqFadeIn);
 
-		gamePointsTotal = 0;
-		gamePoints = 0;
-		playedAudio = false;
+	if (room == rmTest) {
+		if (keyboard_check_pressed(vk_enter)) {
+			TransitionStart(rmCredits, sqFadeOut, sqFadeIn);
+			
+			gamePointsTotal = 0;
+			gamePoints = 0;
+			playedAudio = false;
 		
-		objPlacer.placingIndex = 0;
-		objPlacer.imgAngle = 0;
-	}
+			objPlacer.placingIndex = 0;
+			objPlacer.imgAngle = 0;
+		}
+
+		if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
+		playedAudio = true;
+	} else {
+		runMode = false;
 	
-	if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
-	playedAudio = true;
+		if (keyboard_check_pressed(vk_enter)) {
+			var rm;
+		
+			array_delete(global.playableRooms, 0, 1);
+		
+			rm = rmCredits;
+			if (array_length(global.playableRooms) > 0) rm = global.playableRooms[0];
+				
+			TransitionStart(rm, sqFadeOut, sqFadeIn);
+
+			gamePointsTotal = 0;
+			gamePoints = 0;
+			playedAudio = false;
+		
+			objPlacer.placingIndex = 0;
+			objPlacer.imgAngle = 0;
+		}
+	
+		if (!playedAudio) audio_play_sound(sndSuccess, 1, false);
+		playedAudio = true;
+	}
 }
