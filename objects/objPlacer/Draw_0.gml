@@ -10,7 +10,7 @@ draw_sprite_ext(blockImg, 0, xx, yy, 1, 1, imgAngle, color, 0.5);
 scribble("[fa_middle][fa_center][scale, 1.3]A    D[/]").draw(xx, yy);
 
 if (blockQuant > 0) {
-	scribble("[fa_center]Placing:[/]").draw(GRID_BUFFER / 2, room_height / 2);
-	draw_sprite_ext(blockImg, 0, GRID_BUFFER / 2, room_height / 2 + 64, 2, 2, imgAngle, c_white, 0.5);
+	scribble("[fa_center]Placing:[/]").draw(GRID_BUFFER / 2, GRID_BUFFER);
+	draw_sprite_ext(blockImg, 0, GRID_BUFFER / 2, GRID_BUFFER + 64, 2, 2, imgAngle, c_white, 0.5);
 }
 

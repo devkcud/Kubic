@@ -1,30 +1,6 @@
 /// @desc Drawing menu
 
-if (!room == rmMenu) exit;
-
-// Drawing fake grid
-draw_set_alpha(0.3);
-
-var buffer = 128,
-	grid = 32;
-
-// Horizontal
-for (var i = 0; i < room_height - buffer * 2; i += grid) {
-	draw_line_width(buffer, i + buffer, room_width - buffer, i + buffer, 2);
-}
-
-// Vertical
-for (var i = 0; i < room_width - buffer * 2; i += grid) {
-	draw_line_width(i + buffer, buffer, i + buffer, room_height - buffer, 2);
-}
-
-draw_set_alpha(1);
-
-draw_rectangle(buffer, buffer, room_width - buffer, room_height - buffer, true);
-
-// Drawing fake game
-
-draw_sprite(sprFakeGame, round(image_index / (0.45 * room_speed)), room_width / 2 + 16, room_height / 2 + 16);
+if (room != rmMenu) exit;
 
 // Drawing side
 
@@ -42,7 +18,7 @@ scribble(
 	+ "[rainbow][scale, 1.4]Enter[/scale][/rainbow] to start." + "\n"
 	+ "[rainbow][scale, 1.4]C[/scale][/rainbow] to see the controls."
 	+ "[/]"
-).draw(32, room_height / 2);
+).draw(round(room_width / 12), room_height / 2);
 
 scribble("[fa_center][fa_bottom][fntScore]Created by\n[scale, 2]LostDuck[/scale]").draw(round(room_width / 6), room_height - 32);
 

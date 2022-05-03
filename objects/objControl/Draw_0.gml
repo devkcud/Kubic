@@ -3,10 +3,8 @@
 if (room == rmMenu) exit;
 if (room == rmControls) exit;
 
-draw_text_scribble(room_width / 2, 64, "[wave][fa_center][fa_middle][fntHeader][scale, 1][sprKu]bic[/]");
-
-if (runMode == false) draw_text_scribble(room_width - 128, 128, "[fntTutorial][scale, 1.2][fa_bottom][fa_right]Press [blink]\"P\"[/blink] to start/stop [rainbow]\"run mode\"[/rainbow].");
-if (runMode == true) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_right][rainbow]Run mode[/rainbow] on!").draw(room_width - 128, 128);
+if (runMode == false) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to start [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
+else scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to stop [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
 
 if (gamePoints == gamePointsTotal) {
 	draw_set_alpha(0.7);

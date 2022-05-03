@@ -1,4 +1,0 @@
-/// @desc ?
-
-muted = !muted;
-
