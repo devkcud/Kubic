@@ -1,5 +1,7 @@
 /// @desc Variables
 
+depth = objControl.depth + 1;
+
 timerCooldown = 0.4;
 
 xx = 0;

@@ -12,7 +12,7 @@ if (keyboard_check_pressed(ord("C"))) {
 	audio_play_sound(sndSuccess, 1, false);
 }
 
-if (keyboard_check_pressed(ord("T"))) {
+if (keyboard_check_pressed(vk_f9)) {
 	TransitionStart(rmTest, sqSquareOut, sqSquareIn);
 	audio_play_sound(sndSuccess, 1, false);
 }

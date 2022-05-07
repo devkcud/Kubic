@@ -1,6 +1,6 @@
 /// @desc Drawing tutorial
 
-if (gamePoints == gamePointsTotal) exit;
+if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 for (var i = 0; i < 3; i++) {
 	scribble("[fa_top][fa_left][fntTutorial][scale, 0.8][c_gray][" + objPlacer.blocks[# i, 3] + "] [scale, 1.5]" + string(objPlacer.blocks[# i, 1]) + "[/]").draw((GRID_BUFFER * i) * 0.5 + GRID_BUFFER, GRID_BUFFER - 38);

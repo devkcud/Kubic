@@ -29,3 +29,6 @@ xx = 0;
 yy = 0;
 
 minDist = 64;
+
+errorTextAlpha = 0;
+

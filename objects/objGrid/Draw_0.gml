@@ -20,6 +20,7 @@ draw_set_alpha(1);
 draw_rectangle(buffer, buffer, room_width - buffer, room_height - buffer, true);
 
 /// Drawing guide lines
+if (runMode == true || gamePoints == gamePointsTotal) exit;
 // horizontal line
 var lineWidth = 1;
 

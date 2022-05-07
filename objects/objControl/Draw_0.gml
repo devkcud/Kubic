@@ -1,12 +1,13 @@
 /// @desc Drawing UI
 
-if (room == rmMenu) exit;
-if (room == rmControls) exit;
+if (room == rmMenu || room == rmControls) exit;
 
-if (runMode == false) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to start [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
-else scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to stop [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
+if (gamePoints != gamePointsTotal) {
+	if (runMode == false) scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to start [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
+	else scribble("[fntTutorial][scale, 1.2][fa_bottom][fa_center]Press [blink]P[/blink] to stop [rainbow]run mode[/rainbow].").draw(room_width / 2, 128);
+}
 
-if (gamePoints == gamePointsTotal) {
+if (gamePoints == gamePointsTotal) {	
 	draw_set_alpha(0.7);
 	draw_set_color(c_black);
 	draw_rectangle(0, 0, room_width, room_height, false);
