@@ -34,6 +34,7 @@
     {"id":{"name":"scribble_super_glyph_copy_all","path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},"order":3,},
     {"id":{"name":"scribble_anim_reset","path":"scripts/scribble_anim_reset/scribble_anim_reset.yy",},"order":5,},
     {"id":{"name":"__scribble_gc_collect","path":"scripts/__scribble_gc_collect/__scribble_gc_collect.yy",},"order":9,},
+    {"id":{"name":"sndStop","path":"sounds/sndStop/sndStop.yy",},"order":7,},
     {"id":{"name":"scribble_is_text_element","path":"scripts/scribble_is_text_element/scribble_is_text_element.yy",},"order":6,},
     {"id":{"name":"scribble_font_get_glyph_ranges","path":"scripts/scribble_font_get_glyph_ranges/scribble_font_get_glyph_ranges.yy",},"order":7,},
     {"id":{"name":"objCursor","path":"objects/objCursor/objCursor.yy",},"order":13,},

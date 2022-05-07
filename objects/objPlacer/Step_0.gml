@@ -8,6 +8,9 @@ blockImgName = blocks[# placingIndex, 3];
 var awaitIndex = placingIndex;
 var height = ds_grid_width(blocks) - 1;
 
+errorTextAlpha -= 0.05;
+errorTextAlpha = clamp(errorTextAlpha, 0, 2);
+
 if (keyboard_check_pressed(ord("W")) || mouse_wheel_up()) {
 	imgAngle = 0;
 	
@@ -37,15 +40,20 @@ yy = clamp(round(mouse_y / GRID_WxH) * GRID_WxH, (GRID_BUFFER + GRID_WxH), room_
 if (keyboard_check_pressed(ord("D"))) imgAngle -= 90;
 if (keyboard_check_pressed(ord("A"))) imgAngle += 90;
 
-with (objCursor) {
-	if (
-		!place_free(x, y)
-		|| !place_empty(x, y, objPush, objScore, objSpike)
-		|| distance_to_object(objScore) < other.minDist
-	) {
-		exit;
+if (blocks[# placingIndex, 1] > 0)
+	with (objCursor) {
+		if (
+			!place_free(x, y)
+			|| !place_empty(x, y, objPush, objScore, objSpike)
+			|| distance_to_object(objScore) < other.minDist
+		) {
+			if (mouse_check_button_pressed(mb_left)) {
+				other.errorTextAlpha = 2.5;
+				audio_play_sound(sndStop, 0, false);
+			}
+			exit;
+		}
 	}
-}
 
 if (mouse_check_button_pressed(mb_left) && blocks[# placingIndex, 1] > 0) {
 	blocks[# placingIndex, 1] -= 1;

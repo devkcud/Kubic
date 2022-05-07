@@ -4,7 +4,7 @@
     "path": "sprites/sprPixel/sprPixel.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": null,

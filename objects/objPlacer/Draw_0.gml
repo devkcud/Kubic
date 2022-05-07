@@ -4,20 +4,22 @@ if (runMode == true || gamePoints == gamePointsTotal) exit;
 
 col = c_white;
 
+if (other.errorTextAlpha < 0.1) reason = "";
+
 with (objCursor)
-	if (other.blocks[# other.placingIndex, 1] == 0) {
-		var text = scribble("[fa_center]Out of blocks.");
-		text.blend(c_white, other.errorTextAlpha);
-		text.draw(x, y - 48);
-		
-		other.col = c_red;
-	} else if (distance_to_object(objScore) < other.minDist) {
-		var text = scribble("[fa_center]Too close to the score.");
-		text.blend(c_white, other.errorTextAlpha);
-		text.draw(x, y - 48);
+	if (distance_to_object(objScore) < other.minDist) {
+		other.reason = "Too close to the score.";
 		
 		other.col = c_red;
 	}
+
+draw_set_font(fntScore);
+draw_set_alpha(other.errorTextAlpha);
+draw_set_color(c_red);
+draw_set_halign(fa_center);
+draw_text(objCursor.x, objCursor.y - 48, reason);
+draw_set_color(c_white);
+draw_set_alpha(1);
 
 if (blockQuant != 0) {
 	draw_sprite_ext(blockImg, 0, xx, yy, 1, 1, imgAngle, col, 0.5);
