@@ -1,3 +1,3 @@
 tutorialStrings = [
-	"Here we have two new blocks. The purple one, is called [wave]multiply block [scale, 0.8][sprMultiply][scale, 1.5][/wave].\nThe other one is called [wave]spike [scale, 0.8][sprSpike][scale, 1.5][/wave], it deletes every block that hits them (and itself).",
+	"Let's test your skills! Try this last tutorial level.\nYou can change the block that you're placing using the [pulse]W[/pulse] & [pulse]S[/pulse] keys or the mouse wheel."
 ];

@@ -2,10 +2,10 @@
 
 global.playableRooms = [
 	rmFirst,
-	rmFifth,
 	rmSecond,
 	rmThird,
-	rmFourth
+	rmFourth,
+	rmFifth,
 ];
 
 cursor_sprite = sprCursor;
