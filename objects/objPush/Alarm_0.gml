@@ -1,6 +1,6 @@
 /// @desc Logic
 
-alarm[0] = timerCooldown * room_speed;
+alarm[0] = walkTimer * room_speed;
 
 if (!runMode) exit;
 

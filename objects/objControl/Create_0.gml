@@ -7,7 +7,15 @@ gamePointsTotal = 0;
 
 global.scoreList = [];
 
-playedAudio = false;
+playedAudio = false; // Refered to the audio played when the level is complete.
 
 placedBlocks = [];
 scoreCollected = [];
+spikesDestroyed = [];
+
+globalvar walkTimerNormal, walkTimerFast, walkTimer, onDoubleSpeed;
+walkTimerNormal = 0.3;
+walkTimerFast = 0.15;
+walkTimer = walkTimerFast;
+onDoubleSpeed = false;
+
