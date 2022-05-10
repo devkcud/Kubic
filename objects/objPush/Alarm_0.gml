@@ -34,9 +34,6 @@ if (place_meeting(x + xx, y, objDirectional) || place_meeting(x, y + yy, objDire
 		var multxx = lengthdir_x(other.vel, image_angle),
 			multyy = lengthdir_y(other.vel, image_angle);
 		
-		show_debug_message("XX: " + string(other.xx) + "| MXX: " + string(multxx));
-		show_debug_message("YY: " + string(other.yy) + "| MXX: " + string(multyy));
-		
 		if ((multxx == other.xx && multyy != other.yy) || (multyy == other.yy && multxx != other.xx)) exit;
 		
 		var obj1 = instance_create_layer(x + multxx, y + multyy, "Placed", objPush),

@@ -13,22 +13,22 @@ errorTextAlpha = clamp(errorTextAlpha, 0, 2);
 
 if (keyboard_check_pressed(ord("W")) || mouse_wheel_up()) {
 	imgAngle = 0;
-	
-	awaitIndex++;
+
+	awaitIndex += (blocks[# awaitIndex + 1, 1] != 0) ? 1 : 2;
 } else if (keyboard_check_pressed(ord("S")) || mouse_wheel_down()) {
 	imgAngle = 0;
 
-	awaitIndex--;
+	awaitIndex -= (blocks[# awaitIndex - 1, 1] != 0) ? 1 : 2;
 }
 
-awaitIndex = clamp(awaitIndex, 0, height);
-
 if (blocks[# awaitIndex, 1] == 0)
-	for (var i = 0; i < height; i++)
+	for (var i = 0; i <= height; i++)
 		if (blocks[# i, 1] != 0) {
 			awaitIndex = i;
 			break;
 		}
+
+awaitIndex = clamp(awaitIndex, 0, height);
 
 placingIndex = awaitIndex;
 
