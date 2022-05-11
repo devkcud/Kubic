@@ -56,6 +56,8 @@ if (blocks[# placingIndex, 1] > 0)
 	}
 
 if (mouse_check_button_pressed(mb_left) && blocks[# placingIndex, 1] > 0) {
+	if (countTimer == false) countTimer = true;
+	
 	blocks[# placingIndex, 1] -= 1;
 	var obj = instance_create_layer(xx, yy, "Placed", blockPlacing);
 	with (obj) image_angle = other.imgAngle;

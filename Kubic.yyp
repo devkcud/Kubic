@@ -20,6 +20,7 @@
     {"id":{"name":"objDirectional","path":"objects/objDirectional/objDirectional.yy",},"order":8,},
     {"id":{"name":"sndTypewriter","path":"sounds/sndTypewriter/sndTypewriter.yy",},"order":6,},
     {"id":{"name":"__scribble_gen_2_parser","path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},"order":2,},
+    {"id":{"name":"objTimer","path":"objects/objTimer/objTimer.yy",},"order":10,},
     {"id":{"name":"__scribble_config_colours","path":"scripts/__scribble_config_colours/__scribble_config_colours.yy",},"order":1,},
     {"id":{"name":"sprMouse_lb","path":"sprites/sprMouse_lb/sprMouse_lb.yy",},"order":5,},
     {"id":{"name":"scribble_super_clear","path":"scripts/scribble_super_clear/scribble_super_clear.yy",},"order":0,},

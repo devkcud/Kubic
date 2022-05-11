@@ -36,6 +36,6 @@
 #macro SCRIBBLE_DEFAULT_JITTER_MAX_SCALE    1.2      //Default jitter maximum scale. Unlike SCRIBBLE_DEFAULT_PULSE_SCALE this is not an offset
 #macro SCRIBBLE_DEFAULT_JITTER_SPEED        0.4      //Default jitter speed. Larger values cause glyph scales to fluctuate faster
 
-#macro SCRIBBLE_DEFAULT_BLINK_ON_DURATION   50       //Default duration that blinking text should stay on for, in milliseconds
-#macro SCRIBBLE_DEFAULT_BLINK_OFF_DURATION  50       //Default duration that blinking text should turn off for, in milliseconds
+#macro SCRIBBLE_DEFAULT_BLINK_ON_DURATION   40       //Default duration that blinking text should stay on for, in milliseconds
+#macro SCRIBBLE_DEFAULT_BLINK_OFF_DURATION  40       //Default duration that blinking text should turn off for, in milliseconds
 #macro SCRIBBLE_DEFAULT_BLINK_TIME_OFFSET   0        //Default blink time offset, in milliseconds
