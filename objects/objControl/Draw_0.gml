@@ -67,6 +67,8 @@ if (gamePoints == gamePointsTotal) {
 			gamePointsTotal = 0;
 			gamePoints = 0;
 			playedAudio = false;
+			
+			onDoubleSpeed = false;
 		
 			objPlacer.placingIndex = 0;
 			objPlacer.imgAngle = 0;

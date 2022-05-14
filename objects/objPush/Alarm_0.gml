@@ -15,7 +15,7 @@ image_angle = point_direction(0, 0, xx, yy);
 if (place_meeting(x + xx, y, objDirectional) || place_meeting(x, y + yy, objDirectional)) {
 	canPlay = true;
 	
-	with (instance_nearest(x, y, objDirectional)) {
+	with (instance_nearest(x + xx, y + yy, objDirectional)) {
 		if (image_angle == other.image_angle) {
 			if (place_empty(x + other.xx, y + other.yy)) {
 				instance_create_layer(x + other.xx, y + other.yy, "Placed", other.object_index);
@@ -27,12 +27,12 @@ if (place_meeting(x + xx, y, objDirectional) || place_meeting(x, y + yy, objDire
 	}
 	
 	if (!audio_is_playing(sndChange) && canPlay) audio_play_sound(sndChange, 1, false);
-} else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {
-	if (!place_free(x + xx * 2, y) || !place_free(x, y + yy * 2) || !place_free(x + xx * 3, y) || !place_free(x, y + yy * 3)) exit;
-	
-	with (instance_nearest(x, y, objMultiply)) {
+} else if (place_meeting(x + xx, y, objMultiply) || place_meeting(x, y + yy, objMultiply)) {	
+	with (instance_nearest(x + xx, y + yy, objMultiply)) {
 		var multxx = lengthdir_x(other.vel, image_angle),
 			multyy = lengthdir_y(other.vel, image_angle);
+			
+		if (!place_free(x + multxx, y) || !place_free(x, y + multyy) || !place_free(x + multxx * 2, y) || !place_free(x, y + multyy * 2)) exit;
 		
 		if ((multxx == other.xx && multyy != other.yy) || (multyy == other.yy && multxx != other.xx)) exit;
 		

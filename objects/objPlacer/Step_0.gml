@@ -6,7 +6,7 @@ blockImg = blocks[# placingIndex, 2];
 blockImgName = blocks[# placingIndex, 3];
 
 var awaitIndex = placingIndex;
-var height = ds_grid_width(blocks) - 1;
+var width = ds_grid_width(blocks) - 1;
 
 errorTextAlpha -= 0.05;
 errorTextAlpha = clamp(errorTextAlpha, 0, 2);
@@ -14,21 +14,30 @@ errorTextAlpha = clamp(errorTextAlpha, 0, 2);
 if (keyboard_check_pressed(ord("W")) || mouse_wheel_up()) {
 	imgAngle = 0;
 
-	awaitIndex += (blocks[# awaitIndex + 1, 1] != 0) ? 1 : 2;
+	awaitIndex += (blocks[# awaitIndex + 1, 1] != 0)
+		? 1
+		: ((blocks[# awaitIndex + 2, 1] != 0)
+			? 2
+			: 0);
 } else if (keyboard_check_pressed(ord("S")) || mouse_wheel_down()) {
 	imgAngle = 0;
 
-	awaitIndex -= (blocks[# awaitIndex - 1, 1] != 0) ? 1 : 2;
+	awaitIndex -= (blocks[# awaitIndex - 1, 1] != 0)
+		? 1
+		: ((blocks[# awaitIndex - 2, 1] != 0)
+			? 2
+			: 0);
 }
 
 if (blocks[# awaitIndex, 1] == 0)
-	for (var i = 0; i <= height; i++)
+	for (var i = 0; i <= width; i++)
 		if (blocks[# i, 1] != 0) {
+			imgAngle = 0;
 			awaitIndex = i;
 			break;
 		}
 
-awaitIndex = clamp(awaitIndex, 0, height);
+awaitIndex = clamp(awaitIndex, 0, width);
 
 placingIndex = awaitIndex;
 
