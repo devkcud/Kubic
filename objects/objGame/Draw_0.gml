@@ -16,7 +16,8 @@ scribble(
 scribble(
 	"[fa_middle][fa_left][fntScore]"
 	+ "[rainbow][scale, 1.4]Enter[/scale][/rainbow] to start." + "\n"
-	+ "[rainbow][scale, 1.4]C[/scale][/rainbow] to see the controls."
+	+ "[rainbow][scale, 1.4]C[/scale][/rainbow] to see the controls." + "\n"
+	+ "[rainbow][scale, 1.4]T[/scale][/rainbow] to see credits."
 	+ "[/]"
 ).draw(round(room_width / 12), room_height / 2);
 
