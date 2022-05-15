@@ -33,8 +33,11 @@ if (gamePoints == gamePointsTotal) {
 	draw_rectangle(0, 0, room_width, room_height, false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
-
-	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]Good job![/]");
+	
+	randomize();
+	if (gotFin == 0) gotFin = fin[irandom_range(0, array_length(fin) - 1)];
+	
+	draw_text_scribble(room_width / 2, room_height / 2, "[fa_center][fntHeader][rainbow][fa_middle]" + gotFin + "![/]");
 	draw_text_scribble(room_width / 2, room_height / 2 + 48, "[fa_center][fntScore][fa_middle]Press [pulse]Enter[/pulse] to continue.[/]");
 
 	if (room == rmTest) {

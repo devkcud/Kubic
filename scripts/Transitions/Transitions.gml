@@ -28,5 +28,6 @@ function TransitionChangeRoom() {
 function TransitionFinished() {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
+	objControl.gotFin = 0;
 }
 

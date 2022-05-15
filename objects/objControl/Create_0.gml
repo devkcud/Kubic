@@ -19,3 +19,15 @@ walkTimerFast = 0.15;
 walkTimer = walkTimerFast;
 onDoubleSpeed = false;
 
+got = 0;
+fin = [
+	"Good job",
+	"Good",
+	"Nice work",
+	"Nice",
+	"Great work",
+	"Great",
+	"Congratulations",
+	"Amazing",
+];
+
